@@ -1,4 +1,6 @@
 const array = ["text", "category"];
+const newQuote = document.getElementById("newQuote");
+newQuote.addEventListener("click", addQuote);
 
 function showRandomQuote() {
   const random = (document.getElementById("quoteDisplay").innerHTML = array);
@@ -11,4 +13,8 @@ function createAddQuoteForm() {
   const inputEl = document.createElements("input");
   const child = append.appendChild(inputEl);
   return child;
+}
+
+function addQuote() {
+  return createAddQuoteForm();
 }
