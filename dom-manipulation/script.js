@@ -19,6 +19,7 @@ function addQuote() {
   return createAddQuoteForm();
 }
 
+const loacal = localStorage.setItem("Name", "Martin");
 function importFromJsonFile(event) {
   const fileReader = new FileReader();
   fileReader.onload = function (event) {
