@@ -20,6 +20,7 @@ function addQuote() {
 }
 
 const loacal = localStorage.setItem("Name", "Martin");
+const gatting = localStorage.getItem(Name);
 function importFromJsonFile(event) {
   const fileReader = new FileReader();
   fileReader.onload = function (event) {
